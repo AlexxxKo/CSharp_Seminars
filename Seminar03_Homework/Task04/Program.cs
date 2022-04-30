@@ -2,6 +2,7 @@
 int[] setArray(int number)
 {
 	int[] arr = new int[5];
+
 	int i = 0;
 	while (number != 0)
 	{
