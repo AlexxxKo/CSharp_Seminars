@@ -4,7 +4,7 @@ double GetValue(string text)
 {
 	Console.Write($"{text}: ");
 	string getValueStr = Console.ReadLine()!;
-	int value = Convert.ToInt32(getValueStr);
+	double value = Convert.ToDouble(getValueStr);
 	return value;
 }
 

@@ -23,7 +23,7 @@ string isPalindrom(int[] arr)
 			text = "No";
 			break;
 		}
-		else { text = "Yes"; }
+		else text = "Yes";
 	}
 	return text;
 }
