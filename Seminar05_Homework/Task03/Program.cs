@@ -14,7 +14,7 @@ double[] SetArray(int n)
 	for (int index = 0; index < n; index++)
 	{
 		arr[index] = new Random().NextDouble();
-		Console.Write($"{arr[index]} ");
+		// Console.Write($"{arr[index]} ");
 	}
 	return arr;
 }
@@ -40,5 +40,5 @@ double[] array = SetArray(n);
 
 double difference = getDifference(array);
 
-Console.WriteLine();
+// Console.WriteLine();
 Console.WriteLine(difference);

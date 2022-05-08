@@ -23,7 +23,7 @@ double GetSumOddNumber(int[] arr)
 {
 	int n = arr.Length;
 	double sum = 0;
-	for (int index = 0; index < n; index += 2)
+	for (int index = 1; index < n; index += 2)
 	{
 		sum += arr[index];
 	}
