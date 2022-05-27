@@ -1,6 +1,9 @@
-﻿int row = 30;
+﻿// Показать треугольник Паскаля
+// Сделать вывод в виде равнобедренного треугольника. Показать только нечетные числа в треугольнике
+
+int row = 18;
 int[,] triangle = new int[row, row];
-const int cellWidth = 1;
+const int cellWidth = 6;
 
 void FillTriangle()
 {
@@ -19,19 +22,19 @@ void FillTriangle()
 	}
 }
 
-// void PrintTriangle()
-// {
-// 	for (int i = 0; i < row; i++)
-// 	{
-// 		for (int j = 0; j < row; j++)
-// 		{
-// 			if (triangle[i, j] != 0) Console.Write($"{triangle[i, j],cellWidth}");
-// 		}
-// 		Console.WriteLine();
-// 	}
-// }
+void PrintTriangle()
+{
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < row; j++)
+		{
+			if (triangle[i, j] != 0) Console.Write($"{triangle[i, j],cellWidth}");
+		}
+		Console.WriteLine();
+	}
+}
 
-void Magic()
+void IsoscelesEvenTriangle()
 {
 	int col = cellWidth * row;
 	for (int i = 0; i < row; i++)
@@ -39,9 +42,7 @@ void Magic()
 		for (int j = 0; j <= i; j++)
 		{
 			Console.SetCursorPosition(col, i + 1);
-			// if (triangle[i, j] != 0) Console.Write($"{triangle[i, j],cellWidth}");
-			// if (triangle[i, j] != 0) Console.WriteLine("*");
-			if (triangle[i, j] % 2 != 0) Console.WriteLine("*");
+			if (triangle[i, j] % 2 != 0) Console.Write($"{triangle[i, j],cellWidth}");
 			col += cellWidth * 2;
 		}
 		col = cellWidth * row - cellWidth * (i + 1);
@@ -52,6 +53,8 @@ void Magic()
 
 Console.Clear();
 FillTriangle();
-// PrintTriangle();
-// Console.ReadLine();
-Magic();
+PrintTriangle();
+Console.Write("Press any key");
+Console.ReadKey();
+Console.Clear();
+IsoscelesEvenTriangle();
