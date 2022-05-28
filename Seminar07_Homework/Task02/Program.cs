@@ -50,7 +50,7 @@ int[,] FindMinInArray(int[,] arr)
 			}
 		}
 	}
-	Console.WriteLine($"{min} - наименьший элемент. Удаляем {minArr[0, 0]} строку и {minArr[0, 1]} столбец");
+	Console.WriteLine($"{min} - наименьший элемент. Удаляем {minArr[0, 0] + 1} строку и {minArr[0, 1] + 1} столбец");
 	return minArr;
 }
 
