@@ -69,5 +69,6 @@ void PrintArray(int[,] arr)
 	}
 }
 
+Console.Clear();
 SpiralArray(array);
 PrintArray(array);
