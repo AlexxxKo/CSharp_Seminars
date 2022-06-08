@@ -17,12 +17,12 @@ double[,] GetArray(int row, int col)
 	{
 		for (int j = 0; j < arr.GetLength(1); j++)
 		{
-			arr[i, j] = new Random().Next(-1000, 1001);
-			// Console.Write($"{arr[i, j],6} ");
+			arr[i, j] = new Random().Next(-20, 20);
+			Console.Write($"{arr[i, j],6} ");
 		}
-		// Console.WriteLine();
+		Console.WriteLine();
 	}
-	// Console.WriteLine();
+	Console.WriteLine();
 	return arr;
 }
 
